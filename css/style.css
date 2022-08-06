@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    margin: 0 auto;
+    font-family: 'Nunito', Helvetica, sans-serif;
+}
+
+body{
+    background-color: #FAF1E6;
+    color: #01937C;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+header > h1{
+    font-size: 50px;
+}
+
+main{
+    display: flex;
+    font-size: 18px;
+}
+main .container-book{
+    margin: 0 10px 30px 10px;
+    padding: 30px;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 20px;
+}
+main .container-flex-row{
+    display: flex;
+    align-items: center;
+}
+
+#content-book{
+    flex-basis: 60%;
+}
+#add-book{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+#add-book > #add-book-first-row,
+#add-book > #add-book-second-row,
+#add-book > #add-book-third-row{
+    margin: 0;
+    display: flex;
+}
+#add-book #book-title{
+    flex-basis: 100%;
+}
+#add-book #book-author{
+    flex-basis: 71%;
+}
+#add-book #book-year{
+    flex-basis: 29%;
+}
+#add-book > #add-book-third-row{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#add-book label{
+    flex-basis: 88%;
+    margin: 0;
+    text-align: right;
+}
+#add-book #book-status{
+    flex-basis: 2%;
+}
+#add-book #book-submit{
+    flex-basis: 10%;
+}
+
+#content-book-filter h1{
+    flex-basis: 20%;
+}
+#content-book-filter #filter-book{
+    flex-basis: 80%;
+}
+#content-book-filter #filter-book input[type=text]{
+    width: 100%;
+}
+#content-book-filter > .container-book{
+    padding: 30px;
+}
+
+#content-book-count > .container-book{
+    display: flex;
+    text-align: center;
+}
+#content-book-count > .container-book > div{
+    flex-basis: 50%;
+}
+#content-book-count h1 {
+    font-size: 50px;
+}
+
+input{
+    margin: 5px;
+}
+input[type=text],
+input[type=number]{
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #01937C;
+    font-size: 18px;
+    color: #01937C;
+}
+input[type=text]::placeholder,
+input[type=number]::placeholder{
+    text-align: left;
+    font-size: 18px;
+    color: #01937C;
+}
+input[type=text]:focus,
+input[type=number]:focus{
+    outline: 3px solid transparent;
+}
+input[type=text]:focus::placeholder,
+input[type=number]:focus::placeholder{
+    color: transparent;
+}
+input[type=submit], button{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: #01937C;
+    color: white;
+    cursor: pointer;
+}
+
+#completed-book > h3,
+#uncompleted-book > h3{
+    margin: 10px;
+}
+
+.item-book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 5px;
+}
+.item-book > .item-title{
+    flex-basis: 40%;
+    text-align: center;
+}
+.item-book > .item-info{
+    flex-basis: 25%;
+    text-align: center;
+}
+.item-book > .item-button{
+    flex-basis: 10%;
+}
+
+.edit-book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.edit-book > .edit-book-title{
+    flex-basis: 55%;
+}
+.edit-book > .edit-book-author{
+    width: 25%;
+}
+.edit-book > .edit-book-year{
+    width: 10%;
+}
+.edit-book > .edit-book-submit{
+    width: 10%;
+}

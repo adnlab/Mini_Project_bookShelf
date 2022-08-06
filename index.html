@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bookie - Reading Companion</title>
+        <link rel='stylesheet' href='css/style.css'>
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+        <header>
+            <h1>Bookie - Reading Companion</h1>
+        </header>
+        <main>
+            <div id='content-book'>
+                <section class="container-book content-book-add">
+                    <h1>Add Book to List</h1>
+                    <form id='add-book'>
+                        <div id='add-book-first-row'>
+                            <input id='book-title' type='text' placeholder='The title of the book' value='' required>
+                        </div>
+                        <div id='add-book-second-row'>
+                            <input id='book-author' type='text' placeholder='The author of the book' value='' required><br>
+                            <input id='book-year' type='number' maxlength='4' placeholder='Published year' value='' required><br>
+                        </div>
+                        <div id='add-book-third-row'>
+                            <label for='status'>Is Completed?</label>
+                            <input id='book-status' name='status' type='checkbox'><br>
+                            <input id='book-submit' type='submit'>
+                        </div>
+                    </form>
+                </section>
+                <section id='content-book-count'>
+                    <div class="container-book">
+                        <div>
+                            <p>Book Completed</p><br>
+                            <h1 id='completed-book-count'>0</h1>
+                        </div>
+                        <div>
+                            <p>Book In Progress</p><br>
+                            <h1 id='uncompleted-book-count'>0</h1>
+                        </div>
+                    </div>
+                </section>
+                <section id='content-book-filter'>
+                    <div class="container-book container-flex-row">
+                        <h1>Book List</h1>
+                        <form id='filter-book'>
+                            <input id='filter-book-title' type='text' placeholder='Search the title of book' value=''>
+                            <input id='filter-book-submit' type='submit' value='search'>
+                            <input id='filter-book-reset' type='submit' value='reset'>
+                        </form>
+                    </div>
+                </section>
+                <section class="container-book content-book-list">
+                    <div id='uncompleted-book'>
+                        <h3>Uncompleted Book</h3>
+                    </div>
+                    <div id='completed-book'>
+                        <h3>Completed Book</h3>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <script src='js/script.js' type='text/javascript'></script>
+        <script src='js/dom.js' type='text/javascript'></script>
+        <script src='js/data.js' type='text/javascript'></script>
+    </body>
+</html>
